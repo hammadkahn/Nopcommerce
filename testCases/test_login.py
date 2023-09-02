@@ -9,7 +9,7 @@ class Test_001_Login:
     username = "admin@yourstore.com"
     password = "admin"
 
-    def test_homePageTitle(self, setup):
+    def test_homePageTitle(self):
         self.driver = webdriver.Chrome()
         self.driver.get(self.baseURL)
         actual_title = self.driver.title
